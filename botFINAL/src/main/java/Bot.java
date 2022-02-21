@@ -14,7 +14,7 @@ public class Bot extends ListenerAdapter {
 
     public static void main(String[] args) throws LoginException {
 
-        JDA jda = JDABuilder.createLight("OTQ1MTY0MzAxOTk0NDQ2ODQ5.YhMK2Q.-3GuQ2dOJmfE_NwZ03CP3qZHCbE", GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES)
+        JDA jda = JDABuilder.createLight("token", GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.competing("creation competition concerning" +
                         " carefully conserving contemporary connect 4 confederation collectables"))
